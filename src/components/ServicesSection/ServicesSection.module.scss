@@ -1,0 +1,9 @@
+.services-container {
+  padding: 4rem 0;
+  background-color: #f6fbff;
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

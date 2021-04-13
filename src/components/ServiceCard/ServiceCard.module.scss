@@ -1,0 +1,33 @@
+@import "../../common.scss";
+
+.card-container {
+  width: 30%;
+  margin: 1%;
+  padding: 3rem 2rem 3rem 1rem;
+  border-radius: 4px;
+  background-color: $white;
+  border: 1px solid #dddfe7;
+  display: flex;
+  .card-icon {
+    flex-basis: 40%;
+    padding-top: 2rem;
+    i {
+      font-size: 3.7rem;
+      color: $primary_red;
+    }
+  }
+  .card-info {
+    flex-basis: 60%;
+    text-align: left;
+    color: $gray_text;
+    transition: box-shadow 0.4s ease-in-out;
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    p {
+      font-size: 0.85rem;
+    }
+  }
+}
