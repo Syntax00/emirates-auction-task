@@ -36,7 +36,7 @@ const StepItem = ({ number, title, description }) => (
 
 const HowItWorksSection = () => {
   const stepsJSX = (steps || []).map((step, ndx) => (
-    <StepItem {...step} number={ndx + 1} />
+    <StepItem {...step} number={ndx + 1} key={step.title} />
   ));
 
   return (
@@ -51,7 +51,11 @@ const HowItWorksSection = () => {
       </div>
 
       <div className={styles["banner-wrapper"]}>
-        <img src={hammerIcon} alt="Sell your car by bidding" className={styles['hammer-icon']} />
+        <img
+          src={hammerIcon}
+          alt="Sell your car by bidding"
+          className={styles["hammer-icon"]}
+        />
         <h1>Your car will be sold by bidding</h1>
         <p>
           You set the starting price it will be sold for the highest bidder{" "}
