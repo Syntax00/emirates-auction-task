@@ -5,6 +5,7 @@ import HowItWorksSection from "./components/HowItWorksSection/HowItWorksSection"
 import StartTodaySection from "./components/StartTodaySection/StartTodaySection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import RequirementsSection from "./components/RequirementsSection/RequirementsSection";
+import Footer from "./components/Footer/Footer";
 
 const App = () => (
   <div className="App">
@@ -14,6 +15,7 @@ const App = () => (
     <StartTodaySection />
     <ServicesSection />
     <RequirementsSection />
+    <Footer />
   </div>
 );
 

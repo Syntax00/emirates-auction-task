@@ -1,0 +1,34 @@
+@import "../../common.scss";
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 6rem 2rem 4rem 2rem;
+  .brand-wrapper {
+    text-align: left;
+    flex-basis: 60%;
+    padding-right: 5rem;
+    img {
+      width: 18.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 0.85rem;
+      color: $gray_text;
+    }
+  }
+  .social-networks-wrapper {
+    flex-basis: 40%;
+    text-align: left;
+    p {
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding-right: 3rem;
+    }
+    .social-networks {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
