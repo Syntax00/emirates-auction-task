@@ -4,6 +4,7 @@ import HeaderBanner from "./components/HeaderBanner/HeaderBanner";
 import HowItWorksSection from "./components/HowItWorksSection/HowItWorksSection";
 import StartTodaySection from "./components/StartTodaySection/StartTodaySection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
+import RequirementsSection from "./components/RequirementsSection/RequirementsSection";
 
 const App = () => (
   <div className="App">
@@ -12,6 +13,7 @@ const App = () => (
     <HowItWorksSection />
     <StartTodaySection />
     <ServicesSection />
+    <RequirementsSection />
   </div>
 );
 

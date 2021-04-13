@@ -1,0 +1,62 @@
+@import "../../common.scss";
+
+.requirements-section-container {
+  .requirements-information {
+    padding: 4rem 0;
+    .requirements-list-container {
+      width: 79%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      .requirement-item {
+        display: flex;
+        width: 48%;
+        text-align: left;
+        margin: 1rem 1%;
+        .circle-wrapper {
+          margin-right: 1rem;
+          i {
+            color: $primary_red;
+            font-size: 50%;
+          }
+        }
+        .requirement-text-wrapper {
+          p {
+            font-size: 1rem;
+            color: $gray_text;
+          }
+        }
+      }
+    }
+  }
+  .required-documents-container {
+    background-color: $light_blue;
+    padding: 3rem 0;
+    .required-docs-title {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+    .documents {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 70%;
+      margin: 1.5rem auto;
+      text-align: center;
+      .document {
+        flex-basis: 33%;
+        p {
+          color: $gray_text;
+          font-weight: 500;
+          font-size: 1.1rem;
+        }
+        span {
+          font-size: 0.8rem;
+          color: $gray_text;
+        }
+      }
+    }
+  }
+}

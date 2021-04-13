@@ -1,6 +1,8 @@
+@import '../../common.scss';
+
 .services-container {
   padding: 4rem 0;
-  background-color: #f6fbff;
+  background-color: $light_blue;
   .services {
     display: flex;
     flex-wrap: wrap;
