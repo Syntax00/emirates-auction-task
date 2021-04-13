@@ -19,3 +19,10 @@
     background-color: darken($primary_red, 7%);
   }
 }
+
+@media screen and (max-width: $phone_max_width) {
+  .btn-wrapper {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.7rem;
+  }
+}

@@ -60,3 +60,53 @@
     }
   }
 }
+
+@media screen and (max-width: $phone_max_width) {
+  .requirements-section-container {
+    .requirements-information {
+      padding: 2rem 0;
+      .requirements-list-container {
+        width: 82%;
+        display: flex;
+        flex-direction: column;
+        .requirement-item {
+          width: 100%;
+          margin: 0.7rem 1%;
+          .circle-wrapper {
+            margin-right: 1rem;
+            i {
+              color: $primary_red;
+              font-size: 50%;
+            }
+          }
+          .requirement-text-wrapper {
+            p {
+              font-size: 0.85rem;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+    .required-documents-container {
+      .required-docs-title {
+        font-size: 0.92rem;
+      }
+      .documents {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 1rem auto;
+        .document {
+          flex-basis: 33%;
+          p {
+            font-size: 0.75rem;
+          }
+          span {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}

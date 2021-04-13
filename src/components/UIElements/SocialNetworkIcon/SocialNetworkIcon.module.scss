@@ -20,3 +20,14 @@
     background-color: $black;
   }
 }
+
+@media screen and (max-width: $phone_max_width) {
+  .social-network-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    i {
+      color: #f3f7f7;
+      font-size: 100%;
+    }
+  }
+}

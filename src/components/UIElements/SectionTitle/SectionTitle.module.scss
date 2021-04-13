@@ -15,3 +15,16 @@
     margin: 0 auto;
   }
 }
+@media screen and (max-width: $phone_max_width) {
+  .section-title-wrapper {
+    text-align: center;
+    margin: 2.5rem 0;
+    h1 {
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 0.82rem;
+      max-width: 90%;
+    }
+  }
+}

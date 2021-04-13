@@ -7,7 +7,7 @@ import RequirementsSection from "./components/RequirementsSection/RequirementsSe
 import Footer from "./components/Footer/Footer";
 
 const App = () => (
-  <div className="App">
+  <div>
     <TopHeader />
     <HeaderBanner />
     <HowItWorksSection />

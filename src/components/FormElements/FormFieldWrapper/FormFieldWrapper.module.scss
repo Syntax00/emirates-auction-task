@@ -20,3 +20,15 @@
     color: $white;
   }
 }
+
+@media screen and (max-width: $phone_max_width) {
+  .label {
+    font-size: 0.8rem;
+  }
+  .error-container {
+    padding: 0.3rem 1.5rem;
+    span {
+      font-size: 0.75rem;
+    }
+  }
+}

@@ -6,12 +6,13 @@
   .wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .logo-wrapper {
-    flex-basis: 60%;
+    flex-basis: 25%;
     display: flex;
     img {
-      width: 18.5rem;
+      width: 100%;
     }
   }
   .header-controllers-wrapper {
@@ -21,6 +22,23 @@
     .arabic-btn {
       font-family: "Almarai", sans-serif;
       font-weight: 700;
+    }
+  }
+}
+@media screen and (max-width: $tablet_max_width) {
+  .main-header {
+    .logo-wrapper {
+      flex-basis: 40%;
+    }
+    .header-controllers-wrapper {
+      flex-basis: 50%;
+    }
+  }
+}
+@media screen and (max-width: $phone_max_width) {
+  .main-header {
+    .logo-wrapper {
+      flex-basis: 50%;
     }
   }
 }

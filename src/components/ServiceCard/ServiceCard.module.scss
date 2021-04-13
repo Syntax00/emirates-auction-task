@@ -31,3 +31,30 @@
     }
   }
 }
+
+@media screen and (max-width: $phone_max_width) {
+  .card-container {
+    width: 100%;
+    margin: 0.6rem 0;
+    padding: 2rem;
+    flex-direction: column;
+    .card-icon {
+      flex-basis: 100%;
+      padding-top: 0;
+      i {
+        font-size: 2.3rem;
+      }
+    }
+    .card-info {
+      flex-basis: 100%;
+      text-align: center;
+      margin-top: 0.9rem;
+      h3 {
+        font-size: 0.95rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

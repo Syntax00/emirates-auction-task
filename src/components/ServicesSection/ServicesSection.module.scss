@@ -1,4 +1,4 @@
-@import '../../common.scss';
+@import "../../common.scss";
 
 .services-container {
   padding: 4rem 0;
@@ -7,5 +7,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: $phone_max_width) {
+  .services-container {
+    padding: 2rem 0;
+    .services {
+      flex-direction: column;
+    }
   }
 }
