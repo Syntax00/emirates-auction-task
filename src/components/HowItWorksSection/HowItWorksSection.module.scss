@@ -1,0 +1,97 @@
+@import "../../common.scss";
+
+.how-it-works-container {
+  display: flex;
+  height: 76vh;
+  .steps-wrapper,
+  .banner-wrapper {
+    flex-basis: 50%;
+  }
+  .steps-wrapper {
+    background-color: $secondary_gray;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    .steps {
+      width: 60%;
+      h1,
+      p {
+        color: $white;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .single-step-container {
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      .step-number-wrapper {
+        flex-basis: 15%;
+        margin-right: 2%;
+        span {
+          width: 50px;
+          height: 50px;
+          background-color: $primary_red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          font-size: 1.5rem;
+          color: $white;
+        }
+      }
+
+      .step-info-wrapper {
+        flex-basis: 83%;
+        h2 {
+          font-size: 1rem;
+          color: $white;
+          font-weight: 500;
+          margin-bottom: 0.7rem;
+        }
+        p {
+          font-size: 0.9rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .banner-wrapper {
+    @include backgroundWithOverlayGradient(
+      "assets/images/how_it_works_bg.png",
+      $transparent_primary_red,
+      $transparent_primary_red,
+      $transparent_primary_red
+    );
+    padding: 1rem;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img.hammer-icon {
+      width: 3.5rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: $white;
+      text-transform: uppercase;
+      font-size: 1.9rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      color: $white;
+    }
+  }
+}

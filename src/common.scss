@@ -1,0 +1,62 @@
+$primary_red: #ec1c24;
+$transparent_primary_red: rgba(236, 28, 36, 0.9);
+$white: #fff;
+$black: #000;
+$secondary_gray: #323e47;
+%box-shadow {
+  -webkit-box-shadow: 24px 14px 29px 2px rgba(50, 50, 50, 0.36);
+  -moz-box-shadow: 24px 14px 29px 2px rgba(50, 50, 50, 0.36);
+  box-shadow: 24px 14px 29px 2px rgba(50, 50, 50, 0.36);
+}
+@mixin backgroundWithOverlayGradient(
+  $url,
+  $firstColor,
+  $secondColor,
+  $thirdColor
+) {
+  background: -moz-linear-gradient(
+      top,
+      $firstColor 0%,
+      $secondColor 59%,
+      $thirdColor 100%
+    ),
+    url($url) no-repeat;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, $firstColor),
+      color-stop(59%, $secondColor),
+      color-stop(100%, $thirdColor)
+    ),
+    url($url) no-repeat;
+  background: -webkit-linear-gradient(
+      top,
+      $firstColor 0%,
+      $secondColor 59%,
+      $thirdColor 100%
+    ),
+    url($url) no-repeat;
+  background: -o-linear-gradient(
+      top,
+      $firstColor 0%,
+      $secondColor 59%,
+      $thirdColor 100%
+    ),
+    url($url) no-repeat;
+  background: -ms-linear-gradient(
+      top,
+      $firstColor 0%,
+      $secondColor 59%,
+      $thirdColor 100%
+    ),
+    url($url) no-repeat;
+  background: linear-gradient(
+      to bottom,
+      $firstColor 0%,
+      $secondColor 59%,
+      $thirdColor 100%
+    ),
+    url($url) no-repeat;
+  background-size: cover;
+}

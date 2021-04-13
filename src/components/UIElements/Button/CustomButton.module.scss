@@ -1,0 +1,21 @@
+@import "../../../common.scss";
+
+.btn-wrapper {
+  padding: 0.7rem 1.8rem;
+  outline: 0;
+  border: 0;
+  background-color: $primary_red;
+  color: $white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px;
+  @extend %box-shadow;
+  i {
+    margin-left: 0.5rem;
+  }
+  &:hover {
+    background-color: darken($primary_red, 7%);
+  }
+}

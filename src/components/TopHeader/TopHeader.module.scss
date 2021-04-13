@@ -1,0 +1,26 @@
+@import "../../common.scss";
+
+.main-header {
+  padding: 2rem 0;
+  background-color: $white;
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .logo-wrapper {
+    flex-basis: 60%;
+    display: flex;
+    img {
+      width: 18.5rem;
+    }
+  }
+  .header-controllers-wrapper {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-end;
+    .arabic-btn {
+      font-family: "Almarai", sans-serif;
+      font-weight: 700;
+    }
+  }
+}
