@@ -1,0 +1,16 @@
+@import "../../../common.scss";
+
+.text-input {
+  min-height: 40px;
+  display: block;
+  width: 100%;
+  border: 1px solid #bfc4ce;
+  border-radius: 5px;
+  padding: 0 1rem;
+}
+.error {
+  border: 1px solid $primary_red;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: $light_red_field_error_bg;
+}

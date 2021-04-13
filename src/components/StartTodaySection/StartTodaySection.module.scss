@@ -5,9 +5,8 @@
   .start-today-content-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     .informative-content-wrapper,
-    .submit-car-form {
+    .car-form-container {
       flex-basis: 50%;
     }
     .informative-content-wrapper {

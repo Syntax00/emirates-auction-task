@@ -2,6 +2,7 @@ import React from "react";
 
 import WidthLimiter from "../UIElements/WidthLimiter/WidthLimiter";
 import SectionTitle from "../UIElements/SectionTitle/SectionTitle";
+import CarForm from "../CarForm/CarForm";
 
 import video from "../../assets/images/mock_video.png";
 
@@ -23,13 +24,6 @@ const StartTodayInformation = () => (
   </div>
 );
 
-const CarDetailsForm = () => (
-  <div className={styles["submit-car-form"]}>
-    <h1>Enter car details</h1>
-    <h2>Form Initialization</h2>
-  </div>
-);
-
 const StartTodaySection = () => (
   <section className={styles["start-today-container"]}>
     <WidthLimiter>
@@ -41,7 +35,9 @@ const StartTodaySection = () => (
       <div className={styles["start-today-content-wrapper"]}>
         <StartTodayInformation />
 
-        <CarDetailsForm />
+        <div className={styles["car-form-container"]}>
+          <CarForm />
+        </div>
       </div>
     </WidthLimiter>
   </section>

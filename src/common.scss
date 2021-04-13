@@ -1,15 +1,20 @@
 $primary_red: #ec1c24;
 $transparent_primary_red: rgba(236, 28, 36, 0.9);
+$light_red_field_error_bg: #fff6f6;
 $white: #fff;
 $black: #000;
 $secondary_gray: #323e47;
 $gray_text: #595f6f;
 $light_blue: #f6fbff;
+$tablet_max_width: 1024px;
+$phone_max_width: 460px;
+
 %box-shadow {
   -webkit-box-shadow: 24px 14px 29px 2px rgba(50, 50, 50, 0.36);
   -moz-box-shadow: 24px 14px 29px 2px rgba(50, 50, 50, 0.36);
   box-shadow: 24px 14px 29px 2px rgba(50, 50, 50, 0.36);
 }
+
 @mixin backgroundWithOverlayGradient(
   $url,
   $firstColor,

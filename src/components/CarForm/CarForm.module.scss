@@ -1,0 +1,15 @@
+@import "../../common.scss";
+
+.car-form-container {
+  text-align: left;
+  padding: 0 4rem;
+  .subform-title {
+    font-size: 1rem;
+    color: $gray_text;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  .form-controllers {
+    margin-top: 2.4rem;
+  }
+}
