@@ -1,6 +1,7 @@
 # Emirates Auction Task
 
 <br />
+<br />
 
 <p align="center"> 
 <img src="https://i.imgur.com/oFcOZq1.png" style="width: 200%">
