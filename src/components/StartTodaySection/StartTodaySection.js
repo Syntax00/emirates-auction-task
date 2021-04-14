@@ -4,14 +4,31 @@ import WidthLimiter from "../UIElements/WidthLimiter/WidthLimiter";
 import SectionTitle from "../UIElements/SectionTitle/SectionTitle";
 import CarForm from "../CarForm/CarForm";
 
-import video from "../../assets/images/mock_video.png";
+import video from "../../assets/images/video_thumbnail.png";
 
 import styles from "./StartTodaySection.module.scss";
 
-const StartTodayInformation = () => (
-  <div className={styles["informative-content-wrapper"]}>
+const VideoThumbnail = () => (
+  <a
+    href="https://www.youtube.com"
+    target="_blank"
+    rel="noreferrer"
+    className={styles["video-container"]}
+  >
     <img src={video} alt="Car Sample Video" />
 
+    <div className={styles["play-btn-overlay"]}>
+      <div className={styles["play-btn"]}>
+        <i className="fa fa-play" />
+      </div>
+    </div>
+  </a>
+);
+
+const StartTodayInformation = () => (
+  <div className={styles["informative-content-wrapper"]}>
+    <VideoThumbnail />
+    
     <div className={styles["informative-content"]}>
       <h1>Why you should sell your car with us?</h1>
       <h2>We support you from start to finish </h2>
@@ -25,7 +42,7 @@ const StartTodayInformation = () => (
 );
 
 const StartTodaySection = () => (
-  <section className={styles["start-today-container"]}>
+  <section className={styles["start-today-container"]} id="start-today-section">
     <WidthLimiter>
       <SectionTitle
         title="Start today!"

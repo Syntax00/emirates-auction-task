@@ -34,6 +34,7 @@
       margin-bottom: 2.5rem;
       display: flex;
       align-items: center;
+      transition: margin-left 0.3s ease-in-out;
       .step-number-wrapper {
         flex-basis: 15%;
         margin-right: 2%;
@@ -63,6 +64,9 @@
           margin: 0;
         }
       }
+      &:hover {
+        margin-left: 2rem;
+      }
     }
   }
   .banner-wrapper {
@@ -70,7 +74,8 @@
       "assets/images/how_it_works_bg.png",
       $transparent_primary_red,
       $transparent_primary_red,
-      $transparent_primary_red
+      $transparent_primary_red,
+      cover
     );
     padding: 1rem;
     background-size: cover;

@@ -2,6 +2,8 @@ import React from "react";
 
 import CustomButton from "../UIElements/Button/CustomButton";
 
+import { scrollToSection } from "../../utils/helpers";
+
 import styles from "./HeaderBanner.module.scss";
 
 const HeaderBanner = () => (
@@ -12,7 +14,11 @@ const HeaderBanner = () => (
     </div>
 
     <div className={styles["banner-controllers"]}>
-      <CustomButton icon="angle-down" className={styles["start-today-btn"]}>
+      <CustomButton
+        icon="angle-down"
+        onClick={() => scrollToSection("#start-today-section")}
+        className={styles["start-today-btn"]}
+      >
         Start Today
       </CustomButton>
     </div>

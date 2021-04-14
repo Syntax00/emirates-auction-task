@@ -10,6 +10,7 @@ const ServiceCard = ({ icon, title, description }) => (
 
     <div className={styles["card-info"]}>
       <h3>{title}</h3>
+      <div className={styles['animated-underline']} />
       <p>{description}</p>
     </div>
   </div>
