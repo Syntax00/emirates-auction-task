@@ -12,9 +12,6 @@ The task project uses ```create-react-app``` to initialize the React.js ecosyste
 
 ```javascript
 npm install
-```
-
-```javascript
 npm start
 ```
 
