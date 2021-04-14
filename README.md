@@ -1,9 +1,13 @@
 # Emirates Auction Task
 
-The task project uses ```create-react-app``` to initialize the React.js ecosystem. So, it's so simple to get the project up and running, simply installing the required NPM packages and then start the server:
+<p align="center"> 
+<img src="https://i.imgur.com/oFcOZq1.png">
+</p>
 
-`npm i`
-`npm start`
+The task project uses ```create-react-app``` to initialize the React.js ecosystem. So, it's so simple to get the project up and running, simply by installing the required NPM packages and then start the server:
+
+```npm i```
+```npm start```
 
 ## Available Scripts
 
