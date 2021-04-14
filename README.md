@@ -20,6 +20,7 @@ npm start
 2. Responsive design is handled using native `CSS Media Query`. Each component includes its own required Media Query handling.
 3. Animations are also natively handled using `CSS Transitions`.
 4. For the form and validations, `react-final-form` is utilized along with `react-select` for enhanced Select fields.
+5. FontAwesome is used to provide the vector font icons.
 
 ## Project Structure
 ```javascript
