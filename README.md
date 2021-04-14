@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Emirates Auction Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The task project uses ```create-react-app``` to initialize the React.js ecosystem. So, it's so simple to get the project up and running, simply installing the required NPM packages and then start the server:
+
+`npm i`
+`npm start`
 
 ## Available Scripts
 
