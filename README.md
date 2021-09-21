@@ -4,50 +4,47 @@
 <br />
 
 <p align="center"> 
-<img src="https://i.imgur.com/oFcOZq1.png" style="width: 200%">
+<img src="https://www.vodafone.com/sites/default/files/inline-images/gN08grNr8s9vipkhltm4sWWezExdQg5LwJrGY2Ma2ojTjCnvi2.png" style="width: 200%">
 </p>
 
 
-The task project uses ```create-react-app``` to initialize the React.js ecosystem. So, it's so simple to get the project up and running, simply by installing the required NPM packages and then start the server:
+The task project is built using bare ```react-native``` CLI. So, in order to get the project uop and running, all that is needed _aside from having functional simulators for iOS and Android_, is to install the required NPM packages and then run the project:
 
 ```javascript
 npm install
-npm start
+
+// For Android:
+npx react-native run-android
+
+// For iOS
+npx react-native run-ios
 ```
 
 ## Used Technologies, Third-party Packages, and Libraries
-1. For the UI, `SASS/SCSS` along with `CSS Modules` are being used with native SASS/CSS, no UI frameworks were utilized.
-2. Responsive design is handled using native `CSS Media Query`. Each component includes its own required Media Query handling.
-3. Animations are also natively handled using `CSS Transitions`.
-4. For the form and validations, `react-final-form` is utilized along with `react-select` for enhanced Select fields.
-5. FontAwesome is used to provide the vector font icons.
+1. React Native CLI.
+2. Redux & React Redux for managing state.
+3. Animated API from react-native to perform all the required animations.
 
 ## Project Structure
 ```javascript
 -- components (contains all the components being utilized and composed to render the application)
-        |- CarForm
-                |- CarForm.js
-                |- CarForm.module.scss
-        |- TopHeader
-                |- TopHeader.js
-                |- TopHeader.module.scss
-        |- HeaderBanner
-        |- ServicesSection
-        |- FormElements
-                |- FormFieldWrapper
-                |- SelectField
-                |- TextInput
-        |- UIElements
-                |- CustomButton
-                |- SectionTitle
+        |- TodoItem
+                |- TodoItem.js
+                |- TodoItem.styles.js
+        |- TodoList
+                |- TodoList.js
+                |- TodoList.styles.js
+        |- TodoListHeader
+-- store (contains all the Redux store components and configurations)
+        |- actions
+                |- todos.js
                 |- ...
--- assets (contains the assets utilized by the components, e.g. images)
-        |- images
-                |- logo.png
-                |- header_bg.png
+        |- reducers
+                |- todos.js
                 |- ...
--- common.scss (contains all the SASS variables, mixens ..etc globally and frequently used by the components)
--- utils
+        |- store.js
+-- utils (contains common configurations)
+        |- common.js
 -- App.js (composes all the sections components to form the application and finally render it to the DOM)
 
 ```
