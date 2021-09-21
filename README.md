@@ -4,7 +4,7 @@
 <br />
 
 <p align="center"> 
-<img src="https://www.vodafone.com/sites/default/files/inline-images/gN08grNr8s9vipkhltm4sWWezExdQg5LwJrGY2Ma2ojTjCnvi2.png" style="width: 200%">
+<img src="https://www.vodafone.com/sites/default/files/inline-images/gN08grNr8s9vipkhltm4sWWezExdQg5LwJrGY2Ma2ojTjCnvi2.png" style="width: 100%">
 </p>
 
 
